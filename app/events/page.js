@@ -13,7 +13,7 @@ export default function EventsPage() {
       const { data, error } = await supabase.from("events").select("*").order("event_date", { ascending: true });
 
       if (error) {
-        console.error("Error fetching events:", error.message);
+        console.error("Error  events:", error.message);
       } else {
         setEvents(data);
       }
